@@ -16,10 +16,12 @@ const DraggableComponent: React.FC<{ component: string }> = ({ component }) => {
 
 export const Sidebar: React.FC = () => {
   return (
-    <div style={{ width: '200px', padding: '16px', borderRight: '1px solid gray' }}>
+    <div style={{ width: '200px', padding: '16px', }}>
+      <DraggableComponent component="Label" />
       <DraggableComponent component="Text Input" />
       <DraggableComponent component="Checkbox" />
       <DraggableComponent component="Radio Button" />
+      <DraggableComponent component="Button" />
       {/* Add more draggable components as needed */}
     </div>
   );

@@ -6,12 +6,15 @@ import { Sidebar } from './pages/SideBar';
 
 const App: React.FC = () => {
   return (
-    <DndProvider backend={HTML5Backend}>
-      <div style={{ display: 'flex' }}>
-        <Sidebar />
-        <FormBuilderArea />
-      </div>
-    </DndProvider>
+    <div style={{flex:1,minHeight:800,backgroundColor:'yellow',marginTop:-21,padding:20 }}>
+      <DndProvider backend={HTML5Backend}>
+        <h1 style={{marginLeft:16}}>Form Builder</h1>
+        <div style={{ display: 'flex'}}>
+          <Sidebar />
+          <FormBuilderArea />
+        </div>
+      </DndProvider>
+    </div>
   );
 };
 
